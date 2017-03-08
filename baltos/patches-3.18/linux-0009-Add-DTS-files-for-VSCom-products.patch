@@ -1,0 +1,33 @@
+From 1ad58e770d12e3707db4e4b3b89f611eb6cb843e Mon Sep 17 00:00:00 2001
+From: Vision Systems GmbH <contact@visionsystems.de>
+Date: Fri, 9 Oct 2015 14:22:17 +0200
+Subject: [PATCH] Add DTS files for VSCom products
+
+---
+ arch/arm/boot/dts/Makefile | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+diff --git a/arch/arm/boot/dts/Makefile b/arch/arm/boot/dts/Makefile
+index 38c89ca..9d7b737 100644
+--- a/arch/arm/boot/dts/Makefile
++++ b/arch/arm/boot/dts/Makefile
+@@ -331,7 +331,15 @@ dtb-$(CONFIG_SOC_AM33XX) += am335x-base0033.dtb \
+ 	am335x-evm.dtb \
+ 	am335x-evmsk.dtb \
+ 	am335x-nano.dtb \
+-	am335x-pepper.dtb
++	am335x-pepper.dtb \
++	netcan.dtb \
++	netcom-plus-omap-uarts.dtb \
++	netcom-plus.dtb \
++	onrisc-baltos-dio-1080.dtb \
++	onrisc-baltos-ir-2110.dtb \
++	onrisc-baltos-ir-3220.dtb \
++	onrisc-baltos-ir-5221.dtb
++
+ dtb-$(CONFIG_ARCH_OMAP4) += omap4-duovero-parlor.dtb \
+ 	omap4-panda.dtb \
+ 	omap4-panda-a4.dtb \
+-- 
+2.5.3
+
