@@ -14,6 +14,7 @@ define Image/Prepare
 	cp $(PLATFORM_DIR)/image/barebox-am33xx-baltos.img $(BIN_DIR)/
 	cp $(PLATFORM_DIR)/image/barebox-am33xx-baltos-mlo.img $(BIN_DIR)/
 	cp $(PLATFORM_DIR)/image/genimage-barebox-baltos.cfg $(BIN_DIR)/
+	cp $(PLATFORM_DIR)/image/uEnv.txt $(BIN_DIR)/
 	cp $(PLATFORM_DIR)/image/mksdcard.sh $(BIN_DIR)/
 endef
 
