@@ -12,7 +12,7 @@ BOARDNAME:=VScom Baltos iR
 FEATURES:=usb targz ext4 nand ubifs 
 
 #LINUX_VERSION:=3.18.21
-LINUX_VERSION:=3.18.48
+LINUX_VERSION:=3.18.80
 #LINUX_VERSION:=4.1.38
 
 CFLAGS:=-Os -pipe -march=armv4t -mfloat-abi=softfp
