@@ -1,0 +1,5 @@
+
+config config
+	option port '502'
+	option viavpnsw '0'
+

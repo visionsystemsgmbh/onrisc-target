@@ -1,0 +1,17 @@
+#!/bin/sh /etc/rc.common
+
+START=95
+SERVICE_DAEMONIZE=1
+
+start() {
+        echo 'collectarp loaded'
+
+        # start collectarp
+        service_start /usr/bin/collectarp.lua
+}
+
+stop() {
+        echo 'collectarp stop'
+        killall collectarp.lua
+}
+
