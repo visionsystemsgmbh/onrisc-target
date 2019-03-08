@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 ARCH:=arm
 BOARD:=baltos
 BOARDNAME:=VScom Baltos iR
-FEATURES:=usb targz ext4 nand ubifs 
+FEATURES:=usb targz ext4 nand fpu ubifs
 CPU_TYPE:=cortex-a8
 CPU_SUBTYPE:=vfpv3
 
