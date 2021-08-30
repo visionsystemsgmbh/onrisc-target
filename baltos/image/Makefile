@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 OpenWrt.org
+# Copyright (C) 2021 VS Vision Systems GmbH
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -16,6 +16,7 @@ define Image/Prepare
 	cp $(PLATFORM_DIR)/image/barebox-am33xx-baltos-mlo.img $(BIN_DIR)/
 	cp $(PLATFORM_DIR)/image/genimage-barebox-baltos.cfg $(BIN_DIR)/
 	cp $(PLATFORM_DIR)/image/uEnv.txt $(BIN_DIR)/
+	cp $(PLATFORM_DIR)/image/uImage $(BIN_DIR)/
 	cp $(PLATFORM_DIR)/image/mksdcard.sh $(BIN_DIR)/
 
 	$(INSTALL_DIR) $(TARGET_DIR)/boot
