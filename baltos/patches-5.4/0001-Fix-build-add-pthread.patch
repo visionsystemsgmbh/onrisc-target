@@ -1,0 +1,25 @@
+From a12acd4aca783f02b5761c051e78c962872271c2 Mon Sep 17 00:00:00 2001
+From: Vision Systems GmbH <contact@visionsystems.de>
+Date: Fri, 3 Sep 2021 14:13:47 +0200
+Subject: [PATCH] Fix build: add pthread
+
+---
+ scripts/Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/scripts/Makefile b/scripts/Makefile
+index b4b7d8b58cd6..c54494bc144b 100644
+--- a/scripts/Makefile
++++ b/scripts/Makefile
+@@ -29,7 +29,7 @@ HOSTCFLAGS_asn1_compiler.o = -I$(srctree)/include
+ HOSTCFLAGS_sign-file.o = $(CRYPTO_CFLAGS)
+ HOSTLDLIBS_sign-file = $(CRYPTO_LIBS)
+ HOSTCFLAGS_extract-cert.o = $(CRYPTO_CFLAGS)
+-HOSTLDLIBS_extract-cert = $(CRYPTO_LIBS)
++HOSTLDLIBS_extract-cert = $(CRYPTO_LIBS) -pthread
+ 
+ always		:= $(hostprogs-y) $(hostprogs-m)
+ 
+-- 
+2.17.0
+
